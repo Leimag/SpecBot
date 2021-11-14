@@ -1,0 +1,16 @@
+{
+    "token": "Insert Token Here",
+    "prefix": "<",
+    "nitro_sniper": true,
+    "giveaway_sniper": true,
+    "error_style": "embeds",
+
+    "api_url": "",
+    "api_key": "",
+    "max_time": 300,
+    "methods": [
+      "LDAP",
+      "NTP",
+      "DNS"
+    ]
+  }

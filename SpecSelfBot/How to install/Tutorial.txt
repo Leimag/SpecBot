@@ -1,0 +1,15 @@
+To download SpecBot run install_requirements.bat
+make sure to have python installed b4 running it then open config.json with text editor
+and insert your token then run main.py
+thats it!
+
+How to get your token
+---------------------
+1. Open discord.com in google chrome and login to your account
+2. Press F12 and click "Application" at the top
+3. On the left side you will see "Local Storage", click the dropdown
+4. Where it says "Filter" type "token". If you dont see your token refresh but do not close the F12
+
+* DISCLAIMER *
+Your account is at risk of getting banned when using this. Therefor when installing and using Reluctant Bot, you agree that it is not
+Reluctant Security's responsibility if your account gets banned.
