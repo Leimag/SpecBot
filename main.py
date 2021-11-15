@@ -285,33 +285,43 @@ async def on_command_error(ctx, error):
             return
         elif isinstance(error, commands.CheckFailure):
             await ctx.message.delete()
-            embed = discord.Embed(title="Spec Bot", description="Made by Clumsy", color=0xff0000)
+            embed = discord.Embed(title="Reluctant Selfbot", description="Made by Clumsy", color=0xff0000)
+
             embed.add_field(name=f"```Missing Permissions```", value="You don't have the required permissions", inline=False)
-            embed.set_footer(text="Error")
+            embed.set_footer(text="Error | reluctant.one")
             await ctx.send(embed=embed)
         elif isinstance(error, commands.MissingRequiredArgument):
             await ctx.message.delete()
+            embed = discord.Embed(title="Reluctant Selfbot", description="Made by Clumsy", color=0xff0000)
+
+            embed.add_field(name=f"```Missing Argument```", value="This Command Requires Arguments", inline=False)
+            embed.set_footer(text="Error | reluctant.one")
+            await ctx.send(embed=embed)
         elif isinstance(error, numpy.AxisError):
             await ctx.message.delete()
-            embed = discord.Embed(title="Spec Bot", description="Made by Clumsy", color=0xff0000)
+            embed = discord.Embed(title="Reluctant Selfbot", description="Made by Clumsy", color=0xff0000)
+
             embed.add_field(name=f"```Invalid Image```", value="That is an invalid image", inline=False)
-            embed.set_footer(text="Error")
+            embed.set_footer(text="Error | reluctant.one")
             await ctx.send(embed=embed)
         elif isinstance(error, discord.errors.Forbidden):
             await ctx.message.delete()
-            embed = discord.Embed(title="Spec Bot", description="Made by Clumsy", color=0xff0000)
+            embed = discord.Embed(title="Reluctant Selfbot", description="Made by Clumsy", color=0xff0000)
+
             embed.add_field(name=f"```Discord Error```", value=f"{error}", inline=False)
-            embed.set_footer(text="Error")
+            embed.set_footer(text="Error | reluctant.one")
             await ctx.send(embed=embed)
         elif "Cannot send an empty message" in error_str:
             await ctx.message.delete()
-            embed = discord.Embed(title="Spec Bot", description="Made by Clumsy", color=0xff0000)
+            embed = discord.Embed(title="Reluctant Selfbot", description="Made by Clumsy", color=0xff0000)
+
             embed.add_field(name=f"```Empty Message```", value="Couldn't Send Empty Message", inline=False)
-            embed.set_footer(text="Error")
+            embed.set_footer(text="Error | reluctant.one")
             await ctx.send(embed=embed)
         else:
             await ctx.message.delete()
             print(f"{Fore.RED}[-] {Fore.WHITE}{error_str}" + Fore.RESET)
+
 
 
 def Nitro():
